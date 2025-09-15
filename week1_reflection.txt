@@ -1,0 +1,4 @@
+Setting up tools with VS code was very simple. Searching through the visual studio editor and grabbing the extensions
+as well as linking our github repository was very easy and self explanitory to do. Pseudocode and flowcharts help before
+coding to assist with your problem solving capability. A new thing I learned today was visio is a great tool to use
+when making flowcharts.
