@@ -1,2 +1,2 @@
-print ("Hello PROG1700!")
-print ("Hello World!")
+b = "Hello, World!"
+print (b[2:9])
