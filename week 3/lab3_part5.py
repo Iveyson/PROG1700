@@ -8,3 +8,5 @@ elif x < 5:
 else:
     print("Case 3")
 
+##  x   y   Out
+##  

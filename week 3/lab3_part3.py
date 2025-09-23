@@ -1,7 +1,7 @@
 temp = float(input("Enter the temperature (°C): "))
-weather = str(input ("Is it raining?"))
+weather = bool(input ("Is it raining? True/False: "))
 
-if temp < 0 and weather == "yes":
+if temp < 0 and weather == True:
     print("Warning: Extreme temperature!")
 else:
     print("Temperature is normal.")
