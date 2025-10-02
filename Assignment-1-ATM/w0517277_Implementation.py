@@ -17,10 +17,10 @@ while True:
     #break the loop and do the calculations
     else:
         break
-#subtract the withdraw from the balance and daily limit and display the transaction
+#subtract the withdraw from the balance and daily limit and display the transaction and set the rounding to 2 decimal places
 balance -= withdraw
 limit -= withdraw
-round(balance, 2)
-round(withdraw, 2)
-round(limit, 2)
+balance=(round(balance, 2))
+withdraw=(round(withdraw, 2))
+limit=(round(limit, 2))
 print("You withdrew ", withdraw," you can withdraw ", limit," today and your new balance is ", balance)
