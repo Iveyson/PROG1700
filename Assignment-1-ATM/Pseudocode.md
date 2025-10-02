@@ -1,6 +1,6 @@
 float variable balance = input of users current balance
-float variable withdraw = input users ammount out
-while true
+initiate a while loop
+    float variable withdraw = input users ammount out
     if withdrawal > balance output
         output error: not enough money
     elsif withdrawl <= 0
