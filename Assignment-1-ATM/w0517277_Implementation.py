@@ -20,4 +20,7 @@ while True:
 #subtract the withdraw from the balance and daily limit and display the transaction
 balance -= withdraw
 limit -= withdraw
+round(balance, 2)
+round(withdraw, 2)
+round(limit, 2)
 print("You withdrew ", withdraw," you can withdraw ", limit," today and your new balance is ", balance)
