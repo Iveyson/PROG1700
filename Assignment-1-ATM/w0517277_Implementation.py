@@ -19,5 +19,5 @@ while True:
         break
 #subtract the withdraw from the balance and daily limit and display the transaction
 balance -= withdraw
-dailylimit -= withdraw
+limit -= withdraw
 print("You withdrew ", withdraw," you can withdraw ", limit," today and your new balance is ", balance)
