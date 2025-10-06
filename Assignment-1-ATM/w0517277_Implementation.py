@@ -1,7 +1,7 @@
 #initializing the balance before the loop so they can re enter withdraw inputs.
 balance = float(input("Insert current balance: "))
 
-#set withdraw limit to 1000 so you cant withdraw more then 1000
+#set withdraw limit to 1000 so you can't withdraw more then 1000
 limit=1000
 
 #set the while loop up so they can redo withdrawl inputs
