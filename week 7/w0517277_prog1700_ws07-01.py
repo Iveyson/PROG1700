@@ -40,3 +40,7 @@ orders = [
     ("Priya", "Medium", ["Cheese"]),
     ("Jordan", "Small", ["Veggie", "Onion"])
 ]
+for name, size, toppings in orders:
+    toppings_str = "&" .join(toppings)
+    print(f"{name} ordered a {size} pizza with {toppings} on top")
+    
