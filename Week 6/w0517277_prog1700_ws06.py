@@ -8,7 +8,7 @@ while count >= 1:
     count -= 1
 print("Lift Off!")
 """
-"""
+
 import random
 
 secret = random.randint(1, 10)
@@ -38,7 +38,7 @@ while play == "Y":
                 play = play.upper
     else:
         break
-"""
+    
 ##ran into issues attempting to install pygame to add sound effects. File Path issues
 """
 import pygame
