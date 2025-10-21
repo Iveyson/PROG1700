@@ -40,7 +40,17 @@ orders = [
     ("Priya", "Medium", ["Cheese"]),
     ("Jordan", "Small", ["Veggie", "Onion"])
 ]
+
 for name, size, toppings in orders:
-    toppings_str = "&" .join(toppings)
-    print(f"{name} ordered a {size} pizza with {toppings} on top")
+    toppings_str=""
+    for i in toppings:
+        toppings_str += i + " "
+    
+    print(f"{name} ordered a {size} pizza with {toppings_str} on top")
+
+# Reflection:
+# 1. Why are tuples useful if you can’t modify them?
+# 2. In which step did immutability cause you to think differently?
+# 3. Which exercise did you enjoy most, and why?
+# 4. Give one example in real life where tuples make sense (e.g., coordinates, database records).
     
