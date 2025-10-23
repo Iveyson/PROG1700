@@ -50,7 +50,12 @@ for name, size, toppings in orders:
 
 # Reflection:
 # 1. Why are tuples useful if you can’t modify them?
+#Tuples are useful if left unmodifiable because of values that will never change like grid coordinates
 # 2. In which step did immutability cause you to think differently?
+#during the mini challenge having to find a way to restore the list that is inside the tuple to unpack it was a very unique way of/
+#problem solving
 # 3. Which exercise did you enjoy most, and why?
+#I enjoyed the pizza orders one the most because it gave me the most trouble and it was the most interesting.
 # 4. Give one example in real life where tuples make sense (e.g., coordinates, database records).
+#A good example would be storing color values. Something like an RGB scale will always have the same numbers associated with the same colour
     
