@@ -106,45 +106,44 @@ unique_items=set(items)
 print(f"the average of your sales is ${average} and your total is ${total}.The best selling item is {best_selling_item} The unique items are {unique_items}")
 """
 #D) Pet Adoption Tracker
+"""
 adoptions = {
     "Cats": 4,
     "Dogs": 6,
     "Rabbits": 2
 }
-
-unique_species = set()
-total_adoptions = 0
-most_popular_count = 0
-most_popular_species = ""
-
 while True:
-    species = input("Enter species (or 'done' to finish): ")
-    if species.lower() == "done":
+    user_animal=input("Insert Animal(or press Done if finished):  ")
+    if user_animal.lower() == "done":
         break
-    count = input(f"How many {species} were adopted? ")
-    if count.isdigit():
-        count = int(count)
-        if count < 0:
-            print("Invalid entry. Count cannot be negative.")
-            continue
-        if species in adoptions:
-            adoptions[species] = adoptions[species] + count
-        else:
-            adoptions[species] = count
-        unique_species.add(species)
-    else:
-        print("Invalid entry. Please enter a number.")
+    user_count=input("Enter the Ammount of that Adoptions: ")
+    if user_count.isdigit() and int(user_count) < 1:
+        print("Invalid Input please enter a positive interger")
         continue
-
-print("\nAdoption Report")
-print(f"{'Species':10} adopted:")
-for species in adoptions:
-    print(f"{species:10} adopted: {adoptions[species]}")
-    total_adoptions = total_adoptions + adoptions[species]
-    if adoptions[species] > most_popular_count:
-        most_popular_count = adoptions[species]
-        most_popular_species = species
-
-print(f"\nTotal adoptions: {total_adoptions}")
-print(f"Most popular pet: {most_popular_species} with {most_popular_count} adoptions")
-print(f"Unique species seen: {unique_species}")
+    if user_count.isdigit():
+        adoptions[user_animal] = int(user_count)
+    else:
+        print("Invalid input. Please enter a number.")
+        continue
+popPet=0
+popPetName=""
+totAdop=0
+myset=set(adoptions)
+for species, count in adoptions.items():
+    totAdop+=count
+    if count > popPet:
+        popPet=count
+        popPetName=species
+    print(f"{species:10} adopted: {count}")
+print(f"Them most Popular animal is {popPetName} and the total adoption count is {totAdop}")
+print(myset)
+"""
+# Reflection:
+# 1. Which dataset (weather, library, café, or pets) was easiest to work with, and why?
+#The easiest one to work with was pets. It was just a dictionary
+# 2. How do loops make repetitive tasks faster in programming?
+#Loops automate the process
+# 3. Which collection type (list, set, or dict) felt most useful today?
+#All of the collection types serve different purposes. In context to today I found Dictionaries more useful due to the scnearios provided
+# 4. Describe one improvement you would make if this lab continued next week.
+# I would add another optional challenge
