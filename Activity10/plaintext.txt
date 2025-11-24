@@ -1,0 +1,6 @@
+PROG1700 students will practice a Caesar cipher today.
+Please read this file, choose a shift value, and encrypt the contents.
+Then run the decryption routine to recover the original message.
+This exercise demonstrates file I/O, simple text processing, and brute-force analysis.
+Good luck and have fun!
+
