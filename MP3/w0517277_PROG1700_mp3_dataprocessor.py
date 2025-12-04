@@ -8,14 +8,13 @@ def read_grades(file_path):
             name, grade = line.strip().split(",")
             grades[name] = int(grade)
     return grades
- 
+     
 def write_grades_to_txt_and_maths_and_pass_or_fail(grades, output):
     passing=[]
     failing=[]
     total = 0
-    highest = 100
-    lowest = 0
- 
+    highest = 0
+    lowest = 100
     with open(output, "w") as f:
         for name, grade in grades.items():
             f.write(f"{name}: {grade}\n")
@@ -35,9 +34,7 @@ def write_grades_to_txt_and_maths_and_pass_or_fail(grades, output):
         f.write(f"Lowest grade: {lowest}\n")
         f.write(f"Passing grade: {passing}\n")
         f.write(f"Failing grade: {failing}\n")
-       
- 
- 
+
  
 def main():
     grades_dict = read_grades("grades.csv")
