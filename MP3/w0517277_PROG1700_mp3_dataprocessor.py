@@ -13,16 +13,16 @@ def write_grades_to_txt_and_maths_and_pass_or_fail(grades, output):
     passing=[]
     failing=[]
     total = 0
-    highest = None
-    lowest = None
+    highest = 100
+    lowest = 0
  
     with open(output, "w") as f:
         for name, grade in grades.items():
             f.write(f"{name}: {grade}\n")
             total += grade
-            if highest is None or grade > highest:
+            if grade > highest:
                 highest = grade
-            if lowest is None or grade < lowest:
+            if grade < lowest:
                 lowest = grade
             if grade < 50:
                 failing.append(name)
