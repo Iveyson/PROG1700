@@ -1,27 +1,34 @@
-# Define a function called numchecker
-def numchecker():
-    # Start an infinite loop so the program keeps asking until the user exits
+#Guessing Game
+import random
+def user_guess():
     while True:
+        user_input=input("Please enter a number between 1-10: ")
         try:
-            # Prompt the user to enter a number and convert the input to an integer
-            selection = int(input("Enter a valid number (1-26), 0 to exit: "))
-           
-            # Check if the user entered 0 (exit condition)
-            if selection == 0:
-                print("Thank you for using the number checker")
-                break  # Exit the loop
-           
-            # Check if the number is between 1 and 26 (inclusive)
-            elif 1 <= selection <= 26:
-                print("Well done.")  # Valid input
-           
-            # If the number is outside the valid range
+            user_input=int(user_input)
+            if user_input > 10 or user_input<1:
+                print("Please enter an interger between 1 and 10")
             else:
-                print("Invalid input.")
-       
-        # Handle the case where the user enters something that is not an integer
-        except ValueError:
-            print("Invalid input. Please enter an integer.")
- 
-# Main program starts here
-numchecker()  # Call the function to run the program
+                return user_input
+        except:
+            print("This is not an interger try again")
+
+def random_number_gen():
+    ran_num=random.randint(1,10)
+    return ran_num
+
+
+def check_number(target):
+    while True:
+        guess = user_guess()
+        if guess == target:
+            print("You have guessed the correct number")
+            break
+        else:
+            print("Please Try again!!: ")
+
+def main():
+    target=random_number_gen()
+    check_number(target)
+
+if __name__ == "__main__":
+    main()
