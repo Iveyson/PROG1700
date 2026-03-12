@@ -1,0 +1,9 @@
+set the statys if the alarm to on ---> use Boolean
+alarm_activated_status to on
+Password 3 attempts
+ouutput to user (enter 5 digit password)
+conver userinput to number
+validate number
+    if yes 
+        check password attempts
+        if attempts=3 
